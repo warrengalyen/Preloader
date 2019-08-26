@@ -1,5 +1,5 @@
 {
-  "name": "Preloader",
+  "name": "preloader",
   "version": "1.2.1",
   "description": "A library for loading web assets",
   "main": "index.js",
@@ -23,7 +23,7 @@
     "name": "Warren Galyen",
     "email": "support@mechanikadesign.com",
     "url": "https://github.com/wgalyen"
-  }
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wgalyen/preloader/issues"
@@ -34,6 +34,7 @@
     "js-oop": "^1.0.0"
   },
   "devDependencies": {
+    "standard": "8.5.0",
     "budo": "9.2.1"
   }
 }
