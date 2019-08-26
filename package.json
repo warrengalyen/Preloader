@@ -31,6 +31,5 @@
   "homepage": "https://github.com/wgalyen/preloader",
   "dependencies": {
     "js-oop": "^1.0.0",
-    "signals": "^1.0.0"
   }
 }
