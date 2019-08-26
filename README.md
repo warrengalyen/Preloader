@@ -1,6 +1,6 @@
 # Preloader.js
 
-# index.js[experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
+[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
 A library for loading web assets 
 
