@@ -1,10 +1,10 @@
-var preloader = require('./');
-var loader = preload({
+var preloader = require('../');
+var loader = preloader({
     xhrImages: false,
     loadFullAudio: false,
     loadFullVideo: false
 });
-loader.on('prorgess', function(prorgess) {
+loader.on('progress', function(progress) {
     console.log(progress);
 });
 loader.on('complete', function() {
