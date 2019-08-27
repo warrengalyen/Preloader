@@ -47,6 +47,7 @@ This creates a new instance of the preloader on which you use the following api.
 ```loadFullVideo``` Specifies if video should be loaded in full instead of just to the point where it can play, default: false
 ```onComplete``` A function to attach to the complete event
 ```onPorgress``` A function to attach to the progress event
+```throttle``` A integer specifying maximum amount of connections at a time, 0 = indefinite
 
 ### add(url, options) 
 
