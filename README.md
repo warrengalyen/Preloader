@@ -120,7 +120,9 @@ Retrieves loaded asset from loader
 ```url```: `String` URL of asset  
 ```Returns```: asset instance  
 
+### reset()
 
+Resets loading so you can reuse the preloader. Does not remove cached loads so `get()` continues to function for alls assets.
 
 ## License
 
