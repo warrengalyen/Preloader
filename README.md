@@ -17,9 +17,7 @@ Here is a common usage of the preloader.
 ```js
 var preloader = require('preloader');
 var loader = preloader({
-  xhrImages: false,
-  loadFullAudio: false,
-  loadFullVideo: false
+  xhrImages: false
 });
 loader.on('progress',function(progress) {
   console.log(progress);
@@ -43,8 +41,6 @@ loader.load();
 This creates a new instance of the preloader on which you use the following api. It is not a singleton and must be instantiated to use. THe options object contains the following properties.
 
 ```xhrImage``` Loads images via XHR and converts to a Blob instead of the image tag, default: false
-```loadFullAudio``` Specifies if audio should be loaded in full instead of just to the point where it can play, default: false
-```loadFullVideo``` Specifies if video should be loaded in full instead of just to the point where it can play, default: false
 ```onComplete``` A function to attach to the complete event
 ```onProgress``` A function to attach to the progress event
 ```throttle``` A integer specifying maximum amount of connections at a time, 0 = indefinite
@@ -55,6 +51,11 @@ Generic asset loader function - determines loader to be used based on file-exten
 
 ```url```: `String` URL of asset  
 ```options```: `Object` Custom options to override the global options created at instantiation, can also pass in `onComplete` and `onProgress` to listen to the events on this particular item.  
+
+### addAudio(url, options)
+Load audio - uses the LoaderAudio loader
+```url```: `String` URL of asset
+```options```: `Object` Custom options to override the global options created at instantiation, can also pass in `onComplete` and `onProgress` to listen to the events on this particular item.
 
 ### addImage(url ,options) 
 
